@@ -9,10 +9,12 @@ const authorSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    books: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Book"
-    }
+    books: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Book"
+        }
+    ]
 });
 
 const bookSchema = new mongoose.Schema({
