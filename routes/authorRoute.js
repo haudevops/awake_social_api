@@ -7,3 +7,5 @@ route.post("/", authorController.addAuthor);
 
 //Get All Author
 route.get("/", authorController.getAllAuthor);
+
+module.exports = route;

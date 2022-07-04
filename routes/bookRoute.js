@@ -7,3 +7,5 @@ route.post("/", bookController.addBook);
 
 //Get All Book
 route.get("/", bookController.getAllBook);
+
+module.exports = route;
