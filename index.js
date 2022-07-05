@@ -8,7 +8,6 @@ const dotenv = require("dotenv").config();
 const authorRoute = require("./routes/authorRoute");
 const bookRoute = require("./routes/bookRoute");
 
-// dotenv.config();
 mongoose.connect(process.env.MONGODB_URL, () =>{
     console.log("Connected to DB");
 });
