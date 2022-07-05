@@ -9,7 +9,7 @@ const authorRoute = require("./routes/authorRoute");
 const bookRoute = require("./routes/bookRoute");
 
 // dotenv.config();
-mongoose.connect("mongodb+srv://hau_admin:12345678910@nodedb.dkhxb.mongodb.net/?retryWrites=true&w=majority", () =>{
+mongoose.connect(process.env.MONGODB_URL, () =>{
     console.log("Connected to DB");
 });
 
